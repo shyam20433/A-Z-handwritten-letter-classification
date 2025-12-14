@@ -240,14 +240,4 @@ Predicts the handwritten letter from canvas data.
 - [TensorFlow/Keras Documentation](https://www.tensorflow.org/)
 - [CNN Architecture Best Practices](https://cs231n.github.io/)
 
-## 📄 License
 
-This project uses the Kaggle A-Z Handwritten Dataset. Please refer to the dataset's license for usage terms.
-
-## 👤 Author
-
-Created as a machine learning demonstration project.
-
----
-
-**Last Updated**: December 2025
