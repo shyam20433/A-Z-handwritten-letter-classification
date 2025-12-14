@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>A–Z Letter Recognition + NN Visualizer</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<h1>A–Z Letter Recognition + Neural Network Visualization</h1>
+
+<div class="main">
+
+    <div class="card">
+        <h2>Draw a Letter</h2>
+        <canvas id="canvas" width="300" height="300"></canvas>
+
+        <div class="buttons">
+            <button id="clearBtn">Clear</button>
+            <button id="predictBtn">Predict</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Prediction</h2>
+
+        <div id="resultLetter" class="big-letter">?</div>
+        <div id="confidence">Confidence: --%</div>
+
+        <h3>Probabilities</h3>
+        <div id="probabilities"></div>
+    </div>
+</div>
+
+<h2>Neural Network Visualization</h2>
+
+<!-- NN Visualization Canvas -->
+<canvas id="nnCanvas" width="900" height="500"></canvas>
+
+<script src="/static/script.js"></script>
+<script src="/static/nn.js"></script>
+
+</body>
+</html>
