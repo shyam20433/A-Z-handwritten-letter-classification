@@ -1,4 +1,4 @@
-# MNIST Letters - Handwritten Letter Recognition
+# Handwritten Letter Recognition
 
 A deep learning web application that recognizes handwritten letters (A-Z) using a Convolutional Neural Network (CNN) trained on the Kaggle A-Z Handwritten Dataset.
 
