@@ -1,9 +1,12 @@
 from flask import Flask, render_template, request, jsonify
 import numpy as np
+import os
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'  # Suppress TensorFlow warnings
 from tensorflow.keras.models import load_model
 
 app = Flask(__name__)
-model = load_model("kaggle_az_model.h5")
+model = load_model("kaggle_az_model.h5", compile=False)
+model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
 
 
 LETTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
